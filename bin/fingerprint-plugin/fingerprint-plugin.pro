@@ -18,7 +18,8 @@ LIBEXECDIR = $${PREFIX}/$${LIBEXEC}/fingerprint-gui
 
 target.path = $${LIBEXECDIR}
 INSTALLS += target
-
+LOCALEDIR  = $${PREFIX}/share/fingerprint-gui/
+DEFINES +=LOCALEDIR=\\\"$${LOCALEDIR}\\\"
 DEFINES +=LIBEXECDIR=\\\"$${LIBEXECDIR}\\\"
 QMAKE_CXXFLAGS+=-fno-strict-aliasing
 
