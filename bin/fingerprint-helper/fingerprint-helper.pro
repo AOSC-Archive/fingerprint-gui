@@ -31,7 +31,7 @@ LIBS += -lusb-1.0 -lfprint -lfakekey -lX11 -ldl -lqca-qt5
 
 # Input
 HEADERS += \
-	        ../../include/GlobalsImg.h \
+	    ../../include/GlobalsImg.h \
             ../../include/DeviceHandler.h \
             ../../include/UsbDevice.h \
             ../../include/FingerprintDevice.h \
@@ -43,7 +43,8 @@ HEADERS += \
             ../../include/UserSettings.h \
             ../../include/PamGUI.h \
             ../../include/PamNonGUI.h \
-            ../../include/Globals.h
+	    ../../include/Globals.h \
+	    ../../include/i18nHelper.h
 
 FORMS += ../../src/FingerprintPlugin.ui
 
