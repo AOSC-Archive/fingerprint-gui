@@ -32,6 +32,7 @@
 #include <X11/Xresource.h>
 #include <X11/keysym.h>
 #include <QX11Info>
+#include <QDesktopWidget>
 #include "GlobalsImg.h"
 
 PamGUI::PamGUI(FingerprintDevice *dev,const char *user,const char *finger)

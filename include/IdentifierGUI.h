@@ -29,6 +29,7 @@
 #include <QtGui>
 #include <QObject>
 #include <QEventLoop>
+#include <QDesktopWidget>
 #include "Globals.h"
 #include "ui_FingerprintIdentifier.h"
 #include "FingerprintDevice.h"
@@ -48,7 +49,7 @@ private:
     QPixmap fpPix;
 
 public:
-    IdentifierGUI(bool decorated,FingerprintDevice *device,FingerprintData *identifyData,QWidget *parent=0,Qt::WFlags f=0);
+    IdentifierGUI(bool decorated,FingerprintDevice *device,FingerprintData *identifyData,QWidget *parent=0,Qt::WindowFlags f=0);
 
 public slots:
     void matchResult(int match,struct fp_pic_data *pic);

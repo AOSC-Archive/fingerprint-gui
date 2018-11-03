@@ -1,7 +1,7 @@
 TEMPLATE = app
 CONFIG += qt thread crypto
 TARGET = fingerprint-helper
-QT += xml
+QT += xml widgets x11extras
 DEPENDPATH += . ../../include ../../src
 INCLUDEPATH += . ../../include ../../upek/include
 
@@ -27,7 +27,7 @@ uinput-rules.commands = install -d $(INSTALL_ROOT)/etc/udev/rules.d; \
 
 INSTALLS += target uinput-rules
 
-LIBS += -lusb-1.0 -lfprint -lfakekey -lX11 -ldl -lqca
+LIBS += -lusb-1.0 -lfprint -lfakekey -lX11 -ldl -lqca-qt5
 
 # Input
 HEADERS += \

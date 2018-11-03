@@ -27,6 +27,7 @@
 #define _FINGERPRINT_H
 
 #include <QtGui>
+#include <QLabel>
 #include "FingerprintDevice.h"
 
 #include "Globals.h"

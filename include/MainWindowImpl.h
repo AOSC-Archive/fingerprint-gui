@@ -27,6 +27,8 @@
 #define _MAINWINDOWIMPL_H
 
 #include <string>
+#include <QMessageBox>
+#include <QFileDialog>
 #include "ui_FingerprintGUI.h"
 #include "DeviceHandler.h"
 #include "Fingerprint.h"
@@ -77,7 +79,7 @@ private:
     QPixmap fpPix;
 
 public:
-    MainWindowImpl(QWidget * parent = 0, Qt::WFlags f = 0 );
+    MainWindowImpl(QWidget * parent = 0, Qt::WindowFlags f = 0 );
 
 private:
     void tabChanged(int newTab);

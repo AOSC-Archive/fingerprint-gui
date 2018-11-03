@@ -28,6 +28,7 @@
 
 #include <string>
 #include <QtGui>
+#include <QApplication>
 #include <QObject>
 #include "FingerprintDevice.h"
 #include "UsbDevice.h"

@@ -8,6 +8,7 @@ isEmpty(LIB) {
 	LIB = lib
 }
 
+
 LIBDIR = $${PREFIX}/$${LIB}
 
 upek-lib.commands     = install -d $(INSTALL_ROOT)$${LIBDIR}; \

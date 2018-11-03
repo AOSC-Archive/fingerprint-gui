@@ -38,7 +38,7 @@
 #include "../include/Globals.h"
 #include "../include/PolkitListener.h"
 
-PolkitListener::PolkitListener(QObject *parent) : Listener(parent),inProgress(false),selectedUser(0){
+PolkitListener::PolkitListener(QObject *parent) : Listener(parent),inProgress(false),selectedUser(nullptr){
 }
 
 PolkitListener::~PolkitListener(){
@@ -99,8 +99,8 @@ void PolkitListener::finishObtainPrivilege(){
     if(selectedUser.isValid()){
         numTries++;
     }
-    syslog(LOG_DEBUG,"Finishing obtaining privileges (G:%u, C:%u, D:%u).",gainedAuthorization,wasCancelled,(dialog!=NULL));
-    if(!gainedAuthorization&&!wasCancelled&&(dialog!=NULL)){
+	syslog(LOG_DEBUG,"Finishing obtaining privileges (G:%u, C:%u, D:%u).",gainedAuthorization,wasCancelled,(dialog!=nullptr));
+	if(!gainedAuthorization&&!wasCancelled&&(dialog!=nullptr)){
         dialog->authenticationFailure();
         if(numTries<3){
             session.data()->deleteLater();
@@ -117,7 +117,7 @@ void PolkitListener::finishObtainPrivilege(){
     session.data()->deleteLater();
     if(dialog){
         delete(dialog);
-        dialog=NULL;
+		dialog=nullptr;
     }
     inProgress=false;
     syslog(LOG_DEBUG,"Finish obtain authorization: %u",gainedAuthorization);
@@ -127,7 +127,7 @@ void PolkitListener::tryAgain(){
     syslog(LOG_DEBUG,"Trying again.");
     // We will create a new session only when some user is selected
     if(selectedUser.isValid()){
-        session=new Session(selectedUser,cookie,result);
+		session=QSharedPointer<Session>(new Session(selectedUser,cookie,result));
         connect(session.data(),SIGNAL(request(QString,bool)),this,SLOT(request(QString,bool)));
         connect(session.data(),SIGNAL(completed(bool)),this,SLOT(completed(bool)));
         connect(session.data(),SIGNAL(showError(QString)),this,SLOT(showError(QString)));
