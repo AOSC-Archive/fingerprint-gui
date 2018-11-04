@@ -223,7 +223,7 @@
     <message>
         <location filename="../src/PamGUI.cpp" line="258"/>
         <source>OK</source>
-        <translation>确定</translation>
+        <translation>指纹识别成功</translation>
     </message>
     <message>
         <location filename="../src/PamGUI.cpp" line="273"/>
