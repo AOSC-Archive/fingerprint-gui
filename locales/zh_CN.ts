@@ -213,7 +213,7 @@
         <location filename="../src/PamGUI.cpp" line="60"/>
         <location filename="../src/PamGUI.cpp" line="326"/>
         <source>Ready...</source>
-        <translation>识别器就绪…</translation>
+        <translation>识别器就绪……</translation>
     </message>
     <message>
         <location filename="../src/PamGUI.cpp" line="255"/>
