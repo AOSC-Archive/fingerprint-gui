@@ -116,6 +116,97 @@
     </message>
 </context>
 <context>
+    <name>Fingernames</name>
+    <message>
+        <location filename="../include/Fingernames.h" line="34"/>
+        <source>Left Little</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../include/Fingernames.h" line="35"/>
+        <source>Left Ring</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../include/Fingernames.h" line="36"/>
+        <source>Left Middle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../include/Fingernames.h" line="37"/>
+        <source>Left Index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../include/Fingernames.h" line="38"/>
+        <source>Left Thumb</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../include/Fingernames.h" line="39"/>
+        <source>Right Thumb</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../include/Fingernames.h" line="40"/>
+        <source>Right Index</source>
+        <translation>右手食指</translation>
+    </message>
+    <message>
+        <location filename="../include/Fingernames.h" line="41"/>
+        <source>Right Middle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../include/Fingernames.h" line="42"/>
+        <source>Right Ring</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../include/Fingernames.h" line="43"/>
+        <source>Right Little</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Fingerprint</name>
+    <message>
+        <location filename="../src/Fingerprint.cpp" line="268"/>
+        <source>waiting...</source>
+        <translation>等待扫描……</translation>
+    </message>
+    <message>
+        <location filename="../src/Fingerprint.cpp" line="289"/>
+        <location filename="../src/Fingerprint.cpp" line="310"/>
+        <location filename="../src/Fingerprint.cpp" line="336"/>
+        <source>OK</source>
+        <translation>成功</translation>
+    </message>
+    <message>
+        <location filename="../src/Fingerprint.cpp" line="294"/>
+        <location filename="../src/Fingerprint.cpp" line="341"/>
+        <source>Swipe too short...</source>
+        <translation>滑动/按压时间过短……</translation>
+    </message>
+    <message>
+        <location filename="../src/Fingerprint.cpp" line="299"/>
+        <location filename="../src/Fingerprint.cpp" line="346"/>
+        <source>Please center...</source>
+        <translation>请居中指尖……</translation>
+    </message>
+    <message>
+        <location filename="../src/Fingerprint.cpp" line="305"/>
+        <location filename="../src/Fingerprint.cpp" line="352"/>
+        <source>Try again...</source>
+        <translation>请重试……</translation>
+    </message>
+    <message>
+        <location filename="../src/Fingerprint.cpp" line="331"/>
+        <source>No match!</source>
+        <translation>无指纹匹配！</translation>
+    </message>
+</context>
+<context>
     <name>IdentifierWindow</name>
     <message>
         <location filename="../src/FingerprintIdentifier.ui" line="447"/>
@@ -159,19 +250,34 @@
 <context>
     <name>MainWindowImpl</name>
     <message>
-        <location filename="../src/MainWindowImpl.cpp" line="306"/>
+        <location filename="../src/MainWindowImpl.cpp" line="305"/>
         <source>Open Directory on removable Media</source>
         <translation>打开可移动介质上的目录</translation>
     </message>
     <message>
-        <location filename="../src/MainWindowImpl.cpp" line="442"/>
+        <location filename="../src/MainWindowImpl.cpp" line="441"/>
         <source>Save Fingerprints</source>
         <translation>保存指纹</translation>
     </message>
     <message>
-        <location filename="../src/MainWindowImpl.cpp" line="442"/>
+        <location filename="../src/MainWindowImpl.cpp" line="441"/>
         <source>Tar Archives (*.tar.gz)</source>
         <translation>Tar 归档 (*.tar.gz)</translation>
+    </message>
+    <message>
+        <location filename="../src/MainWindowImpl.cpp" line="662"/>
+        <source>&amp;Next</source>
+        <translation>下一步(&amp;N)</translation>
+    </message>
+    <message>
+        <location filename="../src/MainWindowImpl.cpp" line="737"/>
+        <source>Please Swipe Your %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/MainWindowImpl.cpp" line="795"/>
+        <source>&amp;Back</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
